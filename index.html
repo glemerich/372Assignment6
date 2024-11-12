@@ -1,0 +1,54 @@
+<!--
+  Name: Garrett Emerich
+  Date: 11/10/24
+  CSC 372-01
+
+  This is the index page for the rock paper scissors game.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jokebook</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Jokebook</h1>
+  
+  <!-- Random Joke Section -->
+  <div id="random-joke">
+    <h2>Random Joke</h2>
+    <p id="joke-setup"></p>
+    <p id="joke-delivery"></p>
+    <button onclick="fetchRandomJoke()">Get Random Joke</button>
+  </div>
+
+  <!-- Categories Section -->
+  <h2>Categories</h2>
+  <ul id="category-list"></ul>
+
+  <!-- Search Jokes by Category Section -->
+  <div id="search-section">
+    <h2>Search Jokes by Category</h2>
+    <input type="text" id="category-input" placeholder="Enter category">
+    <button onclick="searchJokes()">Search</button>
+  </div>
+  
+  <!-- Joke List Section -->
+  <ul id="joke-list"></ul>
+
+  <!-- Add New Joke Section -->
+  <div id="add-joke-section">
+    <h2>Add a New Joke</h2>
+    <form id="add-joke-form" onsubmit="addJoke(event)">
+      <input type="text" id="new-category" placeholder="Category" required>
+      <input type="text" id="new-setup" placeholder="Setup" required>
+      <input type="text" id="new-delivery" placeholder="Delivery" required>
+      <button type="submit">Add Joke</button>
+    </form>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

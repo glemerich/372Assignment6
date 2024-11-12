@@ -1,0 +1,117 @@
+/*
+Name: Garrett Emerich
+  Date: 11/10/2024
+  CSC 372-01
+
+This is the styling for all pages
+*/
+
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    font-size: 2em;
+    color: #005f73;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    color: #0a9396;
+  }
+  
+  #random-joke, #category-list, #joke-list, form {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #random-joke button, #add-joke-form button, button {
+    background-color: #005f73;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  #random-joke button:hover, #add-joke-form button:hover, button:hover {
+    background-color: #0a9396;
+  }
+  
+  p {
+    font-size: 1.1em;
+    margin: 10px 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul#category-list li, ul#joke-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  ul#category-list li:last-child, ul#joke-list li:last-child {
+    border-bottom: none;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  /* Media Query for Smaller Screens */
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+    
+    #random-joke, #category-list, #joke-list, form {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.5em;
+    }
+  
+    h2 {
+      font-size: 1.3em;
+    }
+  }
+  
